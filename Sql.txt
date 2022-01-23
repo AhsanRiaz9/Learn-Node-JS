@@ -1,0 +1,11 @@
+Create Database testDB;
+use testDB;
+
+Create Table User(
+	id int primary key auto_increment,
+    name varchar(25) not null,
+    age int(10) not null
+);
+
+insert into User(name, age) values('Ali', 23);
+insert into User(name, age) values('Usama',25);

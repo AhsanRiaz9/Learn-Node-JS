@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Names</title>
+</head>
+
+<body>
+    <h1>Name List</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+        </tr>
+        <% if(data.nameList.length){ 
+                        
+            for(var i = 0;i < data.nameList.length;i++) { %>
+            
+           <tr>
+               <td><%=data.nameList[i]%></td>
+           </tr>
+       <% }
+       
+        }else{ %>
+            <tr>
+               <td>No Data</td>
+            </tr>
+       <% } %>
+   
+    </table>
+</body>
+
+</html>
